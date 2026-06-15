@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRM RP - KMCR</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<h1>🚑 PRM RP - Karta Medycznych Czynności Ratunkowych</h1>
+
+<div class="card">
+<h2>Sekcja Pacjenta</h2>
+<input id="imie" placeholder="Imię">
+<input id="nazwisko" placeholder="Nazwisko">
+<input id="wiek" placeholder="Wiek / Data urodzenia">
+</div>
+
+<div class="card">
+<h2>Wywiad</h2>
+<textarea id="sample" placeholder="SAMPLE"></textarea>
+<textarea id="acvpu" placeholder="ACVPU"></textarea>
+<input id="miejsce" placeholder="Miejsce zdarzenia">
+</div>
+
+<div class="card">
+<h2>Badanie</h2>
+<input id="rytm" placeholder="Rytm serca">
+<input id="rozpoznanie" placeholder="Rozpoznanie">
+</div>
+
+<div class="card">
+<h2>Parametry</h2>
+<input id="tetno" placeholder="Tętno">
+<input id="cisnienie" placeholder="Ciśnienie">
+<input id="saturacja" placeholder="Saturacja">
+</div>
+
+<div class="card">
+<h2>Postępowanie</h2>
+<textarea id="czynnosci" placeholder="Wykonane czynności"></textarea>
+<textarea id="leki" placeholder="Podane leki"></textarea>
+</div>
+
+<div class="card">
+<h2>Zespół</h2>
+<input id="kierownik" placeholder="Kierownik zespołu">
+<textarea id="zespol" placeholder="Reszta zespołu"></textarea>
+</div>
+
+<button onclick="sendDiscord()">Wyślij na Discord</button>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
